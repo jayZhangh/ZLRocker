@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DkP-gd-rBe"/>
+                        <viewControllerLayoutGuide type="bottom" id="z6y-Kb-HT9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-hf-2fr" customClass="ZLRocker">
+                                <rect key="frame" x="85" y="90" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="iSq-Yj-cw4"/>
+                                    <constraint firstAttribute="width" constant="150" id="ua6-Pf-FaN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv5-ya-v2q">
+                                <rect key="frame" x="16" y="40" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YnS-qk-4cP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yaC-hf-2fr" firstAttribute="top" secondItem="Vv5-ya-v2q" secondAttribute="bottom" constant="10" id="BJW-8A-pAA"/>
+                            <constraint firstItem="yaC-hf-2fr" firstAttribute="centerX" secondItem="Vv5-ya-v2q" secondAttribute="centerX" id="CCI-zT-eRr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vv5-ya-v2q" secondAttribute="trailing" id="Wi2-vB-TRV"/>
+                            <constraint firstItem="Vv5-ya-v2q" firstAttribute="top" secondItem="DkP-gd-rBe" secondAttribute="bottom" constant="20" id="hWr-Bi-ogB"/>
+                            <constraint firstItem="Vv5-ya-v2q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hhj-4w-2eO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Vv5-ya-v2q" id="xfk-xf-dJo"/>
+                        <outlet property="rocker" destination="yaC-hf-2fr" id="IfZ-Eb-E7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>

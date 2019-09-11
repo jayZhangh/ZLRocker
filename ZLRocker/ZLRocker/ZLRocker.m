@@ -1,9 +1,7 @@
 //
 //  ZLRocker.m
-//  ZMRockerDemo
 //
 //  Created by ZhangLiang on 15/9/13.
-//  Copyright (c) 2015年 com.zmodo. All rights reserved.
 //
 
 #import "ZLRocker.h"
@@ -25,6 +23,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self commonInit];
 }
 
